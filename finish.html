@@ -1,0 +1,56 @@
+<!--**********************************
+**                                  **
+**  AUTHOR:     CJ                  **
+**  DATE:       06/04/2023          **
+**  VERSION:    1.0                 **
+**  PAGE NAME:  finish.html         **
+**                                  **
+***********************************-->
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en"><!--<![endif]--> <!-- Main langauge to be used in this website, en = English. -->
+    
+<!-- PUT ALL LINKS, META, SCRIPTS & TITLE IN HEAD. -->
+    <head>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>       <!-- How to attach a favicon. -->
+        
+        <link rel="stylesheet" type="text/css" href="../css/css.css"/>         <!-- How to link a css stylesheet. -->  
+        <link rel="stylesheet" type="text/css" href="../css/media.css"/>        <!-- ../ = go up & out of this folder.q   '/.,' -->
+        <link rel="stylesheet" type="text/css" href="../css/nav.css"/>          <!-- How to link a css stylesheet. -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!-- Link for social media library. -->
+        
+        <meta charset="UTF-8"/>  
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">       <!-- Compatibility for IE. -->                                        <!-- UTF-8 is best for websites. -->                     
+        <meta name="description" content="Website for a festival"/>                                   <!-- Brief description for SEO. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Set view screen area. -->
+        <meta name="keywords" content="css3, css-only, fullscreen, background, slideshow, images, content" />
+        <meta name="author" content="Colin Jones" />
+
+        <script type="text/javascript" src="../js/test.js" defer> </script>    <!-- Defer loads js after html -->         <!-- How to attach a JS file. -->
+        
+        <title> PROJECT QUIZ </title>  
+    </head>
+
+    <body>
+        <!-- score -->
+        <div class="item6"><div class="title">You ammased a wonderful points total of:</div>
+        <h2 id="score"></h2> <!--GAL-->
+        <h2 id="result"></h2> <!--GAL-->
+        <!-- <div class="score" id="js-score"></div> -->
+
+        <script> /* Function that submits the score */
+            const submitScore = () => alert("Submitting Score: "+score);
+        </script>
+
+        <!-- START AGAIN CODE BELOW -->
+        <p>Please press the button below to start a new game.</p>
+          
+        
+        <button  id="restartBtn" onclick="newGame()"> New Game</button>
+    </body>
+</html>

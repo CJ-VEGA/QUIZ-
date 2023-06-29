@@ -1,0 +1,91 @@
+<!--**********************************
+**                                  **
+**  AUTHOR:     CJ                  **
+**  DATE:       06/04/2023          **
+**  VERSION:    1.0                 **
+**  PAGE NAME:  index.html          **
+**                                  **
+***********************************-->
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html class="ie ie6 no-js" lang="en"> <![endif]-->
+<!--[if IE 7 ]>    <html class="ie ie7 no-js" lang="en"> <![endif]-->
+<!--[if IE 8 ]>    <html class="ie ie8 no-js" lang="en"> <![endif]-->
+<!--[if IE 9 ]>    <html class="ie ie9 no-js" lang="en"> <![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en"><!--<![endif]--> <!-- Main langauge to be used in this website, en = English. -->
+    
+<!-- PUT ALL LINKS, META, SCRIPTS & TITLE IN HEAD. -->
+    <head>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>       <!-- How to attach a favicon. -->
+        
+        <link rel="stylesheet" type="text/css" href="../css/css.css"/>          <!-- How to link a css stylesheet. -->  
+        <link rel="stylesheet" type="text/css" href="../css/media.css"/>        <!-- ../ = go up & out of this folder.q   '/.,' -->
+        <link rel="stylesheet" type="text/css" href="../css/nav.css"/>          <!-- How to link a css stylesheet. -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/> <!-- Link for social media library. -->
+        
+        <meta charset="UTF-8"/>  
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">         <!-- Compatibility for IE. -->                                        <!-- UTF-8 is best for websites. -->                     
+        <meta name="description" content="JS quiz project."/>                   <!-- Brief description for SEO. -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Set view screen area. -->
+        <meta name="keywords" content="css3, css-only, fullscreen, background, game, images, content, js"/>
+        <meta name="author" content="Colin Jones"/>
+
+        <script type="text/javascript" src="../js/test.js" defer> </script>    <!-- Defer loads js after html -->         <!-- How to attach a JS file. -->
+        
+        <title> PROJECT QUIZ </title>  
+    </head>
+    
+    <body>
+        <header>
+            <!-- Not using but leaving for future edits. -->
+        </header>
+
+        <!--FIX BELOW-->
+        
+
+        <div class="grid-container">
+            <div class="item1"> 
+                <h1> QUESTION 1</h1>
+                <h3> Click on Mickey Mouse </h3>
+                <p> Please click on the correct image as an answer.</P>
+                <p> You have <span>60</span> seconds.</P>   
+            </div> <!-- Eo 1-->
+
+
+            <!--dont use onclick use click-->
+            <div class="item2"> <button  id="myBtn" onclick="incrementScore()"> <img src="../images/mm.jpeg" alt="Micky Mouse" width="333" hieght="333"> </button></div><!-- Eo 2 ANS1-->
+
+            <div class="item3"> <button  class="btn" onclick="nextQuestion()"> <img src="../images/speedy gonzales .webp" alt="Speedy Mouse" width="333" hieght="333"> </button></div>  <!-- Eo 3-->
+            <div class="item4"> <button  class="btn" onclick="nextQuestion()"> <img src="../images/jerry.png" alt="Jerry Mouse" width="333" hieght="333"> </button></div><!-- Eo 4-->
+            <div class="item5"> <button  class="btn" onclick="nextQuestion()"> <img src="../images/mighty m.jpeg" alt="Mighty Mouse" width="333" hieght="333"> </button></div><!-- Eo 5-->
+
+            <!-- score-->
+            <div class="item6">
+                <div class="title">Current Score:</div>
+               
+                <h2 id="score">0</h2> <!--GAL-->
+
+                <!--  redo function -->
+                
+                <button  id="restartBtn" onclick="newGame()"> RESTART GAME</button>
+                <div class="explanation">
+                   
+                </div> 
+            </div><!-- Eo 6-->
+
+            <!-- timer -->
+            <div class="item7">
+                
+                <h2 id="time-left"></h2> 
+              
+            </div><!-- Eo 7 -->
+         
+        </div> <!-- Eo grid con -->
+        <!--FIX ABOVE-->
+             
+        <footer>
+            <h1> Quiz game developed by Colin Jones</h1>
+        </footer>
+    </body> <!-- EoF -->
+</html>
